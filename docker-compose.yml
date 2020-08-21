@@ -5,8 +5,6 @@ networks:
     driver: bridge
 
 volumes:
-  pg-database:
-    driver: local
   mysql-database:
     driver: local
   mailcatcher-data:
@@ -35,20 +33,6 @@ services:
       ### 同期対象からコストの重いフォルダを除外 #####################
       - "var:/var/www/html/var"
       - "vendor:/var/www/html/vendor"
-    networks:
-      - backend
-
-  ### Postgres ################################
-  postgres:
-    image: postgres:10
-    environment:
-      - POSTGRES_DB=eccubedb
-      - POSTGRES_USER=dbuser
-      - POSTGRES_PASSWORD=secret
-    ports:
-      - 15432:5432
-    volumes:
-      - pg-database:/var/lib/postgresql/data
     networks:
       - backend
 
