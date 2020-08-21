@@ -51,6 +51,18 @@ services:
     networks:
       - backend
 
+  ### PhpMyAdmin ##################################
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql
+    ports:
+       - 9080:80
+    networks:
+      - backend
+    environment:
+      - PMA_HOST=mysql
+
   ### Mailcatcher ##################################
   mailcatcher:
     image: schickling/mailcatcher

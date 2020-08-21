@@ -189,5 +189,16 @@
         },
         "optimize-autoloader": true,
         "sort-packages": true
+    },
+    "repositories": {
+        "eccube": {
+            "type": "composer",
+            "url": "https://package-api.ec-cube.net",
+            "options": {
+                "http": {
+                    "header": ["X-ECCUBE-KEY: JTWtGbxjMabZg7beK647E6c6NuNTq70eB3KYx3D6"]
+                }
+            }
+        }
     }
 }
