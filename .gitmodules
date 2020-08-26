@@ -1,4 +1,0 @@
-[submodule "app/Plugin/cm_blog"]
-	path = app/Plugin/cm_blog
-	url = https://github.com/coremobile-asakusa/eccube4-plg-blog.git
-	branch = master
