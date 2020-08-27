@@ -113,12 +113,13 @@
         "dama/doctrine-test-bundle": "^5.0",
         "easycorp/easy-log-handler": "^1.0",
         "fzaninotto/faker": "^1.7",
+        "jakub-onderka/php-parallel-lint": "^1.0",
         "mikey179/vfsstream": "^1.6",
         "php-coveralls/php-coveralls": "^2.1",
-        "phpunit/phpunit": "^6.5",
+        "phpunit/phpunit": "^7",
+        "squizlabs/php_codesniffer": "*",
         "symfony/browser-kit": "^3.4",
-        "symfony/phpunit-bridge": "^3.4",
-        "phpunit/phpunit": "^7"
+        "symfony/phpunit-bridge": "^3.4"
     },
     "autoload": {
         "files": [

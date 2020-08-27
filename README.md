@@ -31,6 +31,15 @@ DB: MySQL
     docker-compose exec -u www-data ec-cube bin/console eccube:install
 ```
 
+# Linterとテストを起動するコマンド
+```
+    docker-compose exec ec-cube bash
+    composer install
+    php vendor/bin/parallel-lint ./app/Plugin/CMBlog/
+    vendor/bin/phpunit ./app/Plugin/CMBlog/
+    vendor/bin/phpcs ./app/Plugin/CMBlog/
+```
+
 # ノート
 `/usr/bin/env: 'php\r': No such file or directory` \
 というエラーが発生したら、以下のコマンドで解決出来る

@@ -152,6 +152,9 @@
     "guzzlehttp/psr7": {
         "version": "1.4.2"
     },
+    "jakub-onderka/php-parallel-lint": {
+        "version": "v1.0.0"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
@@ -334,6 +337,15 @@
     },
     "setasign/fpdi-tcpdf": {
         "version": "v2.0.0"
+    },
+    "squizlabs/php_codesniffer": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "0dc9cceda799fd3a08b96987e176a261028a3709"
+        }
     },
     "suncat/mobile-detect-bundle": {
         "version": "1.0",
