@@ -33,6 +33,8 @@ services:
       ### 同期対象からコストの重いフォルダを除外 #####################
       - "var:/var/www/html/var"
       - "vendor:/var/www/html/vendor"
+    env_file:
+      - .env
     networks:
       - backend
 
