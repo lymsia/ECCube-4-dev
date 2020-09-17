@@ -1,0 +1,4 @@
+httpd
+mariadb-server
+mariadb
+yum-utils

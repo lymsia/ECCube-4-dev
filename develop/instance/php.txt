@@ -1,0 +1,3 @@
+yum-config-manager --enable remi-php73
+yum -y install php php-opcache
+yum install php php-mysql php-phar php-mbstring php-zlib php-ctype php-session php-json php-xml php-libxml php-openssl php-zip php-curl php-fileinfo php-intl
